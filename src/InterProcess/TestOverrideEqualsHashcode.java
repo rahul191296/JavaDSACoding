@@ -19,7 +19,7 @@ class A {
 	}
     }
  
-public class Test {
+public class TestOverrideEqualsHashcode {
     public static void main(String[] args) {
         Map<A, Integer> map = new HashMap<>();
  
@@ -33,11 +33,15 @@ public class Test {
         map.put(a3, 3);
        
         map.put(new A("c"), 4);
+        
+        map.put(null, 10);
  
         System.out.println(map.get(a1)); // 4
         System.out.println(map.get(a2));  // 4
         System.out.println(map.get(a3)); // 4
         
-        System.out.println(map.get(new A("d"))); // 4
+        System.out.println(map.get(new A("c"))); // 4
+        
+        System.out.println(map.get(null));
     }
 }
