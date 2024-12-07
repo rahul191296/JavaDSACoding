@@ -1,4 +1,4 @@
-package SliWin;
+package SliWinTwoPointer;
 import java.util.*;
 public class LongestSubstringWithoutRepVarWindow {
 	
@@ -37,10 +37,8 @@ public class LongestSubstringWithoutRepVarWindow {
 		int r=0,l=0;
 		String longest = "";
 		String maxStr = "";
-		Map<Character,Integer> map = new LinkedHashMap<Character,Integer>();
-	
 		
-while(r <str.length()) {
+           while(r <str.length()) {
 			
 			while(set.contains(str.charAt(r))) { // iterate until set already contains the character
 				

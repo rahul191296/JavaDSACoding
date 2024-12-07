@@ -1,4 +1,4 @@
-package SliWin;
+package SliWinTwoPointer;
 import java.util.*;
 public class firstNegaInSliWin {
 

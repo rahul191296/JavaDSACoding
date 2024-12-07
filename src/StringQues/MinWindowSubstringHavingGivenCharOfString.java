@@ -2,7 +2,7 @@ package StringQues;
 
 import java.util.Arrays;
 
-public class MinWindowSubstring {
+public class MinWindowSubstringHavingGivenCharOfString {
 
 public static boolean containsAllCharacters(String s, String p)
 {            boolean flag = true;

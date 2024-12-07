@@ -1,4 +1,4 @@
-package SliWin;
+package SliWinTwoPointer;
 
 public class WindowKSumMax {
 
